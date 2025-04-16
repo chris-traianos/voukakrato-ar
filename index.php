@@ -4,10 +4,19 @@
     <title>AR.js Image Tracker</title>
     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=7">
   </head>
   <body style="margin: 0; overflow: hidden;">
-    <div id="customText">🎉 You found the marker!</div>
+
+    <script src="https://cdn.rawgit.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    <div class="box box-1">
+        <p>magazi eksw</p>
+    </div>
+
+    <div class="box box-2">
+        <p>potiri krasi</p>
+    </div>
 
     <div class="arjs-loader">
       <div>Loading, please wait...</div>
@@ -26,7 +35,7 @@
     <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
     <a-nft
     type="nft"
-    url="https://github.com/chris-traianos/voukakrato-ar/tree/b1a7fa5dfe361c5535827d7e659b73c455d35c53/marker/vouka"
+    url="https://catalyticademo.com/vouka/marker/vouka"
     smooth="true"
     smoothCount="10"
     smoothTolerance=".01"
@@ -35,10 +44,21 @@
     >
     </a-nft>
 
+    <a-nft
+    type="nft"
+    url="https://catalyticademo.com/vouka/marker-2/ar-test"
+    smooth="true"
+    smoothCount="10"
+    smoothTolerance=".01"
+    smoothThreshold="5"
+    id="my-nft-marker-2"
+    >
+    </a-nft>
+
     <!-- static camera that moves according to the device movemenents -->
     <a-entity camera></a-entity>
     </a-scene>
-
-    <script src="index.js"></script>
+    
+    <script src="index.js?v=7"></script>
     </body>
 </html>
