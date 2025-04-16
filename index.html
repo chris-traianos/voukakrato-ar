@@ -67,6 +67,11 @@
       marker.addEventListener("markerLost", () => {
         text.style.display = "none";
       });
+
+      window.addEventListener("arjs-nft-loaded", (event) => {
+        // Hide loading overlay
+        document.querySelector(".arjs-loader").style.display = "none";
+      });
     </script>
   </body>
 </html>
