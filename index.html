@@ -49,6 +49,7 @@
     smoothCount="10"
     smoothTolerance=".01"
     smoothThreshold="5"
+    id="my-nft-marker"
   >
 
   </a-nft>
@@ -59,6 +60,9 @@
     <script>
       const marker = document.querySelector("#my-nft-marker");
       const text = document.querySelector("#customText");
+
+      console.log(marker);
+      
 
       marker.addEventListener("markerFound", () => {
         text.style.display = "block";
